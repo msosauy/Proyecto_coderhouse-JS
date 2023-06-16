@@ -1,28 +1,23 @@
-function calcular() {
-  var ivaResultado = document.getElementById("ivaResultado");
-  var iraeResultado = document.getElementById("iraeResultado");
-  let saleTotal = document.getElementById("sale-total").value;
-  let buyTotal = document.getElementById("buy-total").value;
+let factTotal = "";
+let comprasTotal = "";
+let iraePagar = 4200;
 
-  let totalIvaPagar = saleTotal * 0.22 - buyTotal * 0.22;
-  let totalIraePagar = 4200;
+do {
+  factTotal = prompt("Ingresa la Facturación TOTAL (iva inc.)");
+} while (factTotal === "" || isNaN(factTotal) );
 
-  if (totalIvaPagar > 2500 && totalIvaPagar < 5000) {
-    totalIraePagar = 6000;
-  }
-  if (totalIvaPagar > 5000) {
-    totalIraePagar = 8000;
-  }
-  if (totalIvaPagar < 0) {
-    ivaResultado.innerHTML = "$ " + totalIvaPagar;
-    ivaResultado.style.color = "red";
-  }
-  if (ivaResultado > 0) {
-    ivaResultado.style.color = "green";
-  }
-  ivaResultado.innerHTML = "$ " + totalIvaPagar;
-  iraeResultado.innerHTML = "$ " + totalIraePagar;
+do {
+  comprasTotal = prompt("Ingresa el TOTAL de compras (iva inc.)");
+} while (comprasTotal === "" || isNaN(comprasTotal));
 
-  console.log(totalIvaPagar);
-  console.log(totalIraePagar);
+let ivaPagar = factTotal * 0.22 - comprasTotal * 0.22;
+
+if (ivaPagar > 2500 && ivaPagar < 5000) {
+  iraePagar = 6000;
 }
+if (ivaPagar > 5000) {
+  iraePagar = 8000;
+}
+
+alert("IVA a pagar: $" + ivaPagar + " | IRAE a pagar: $" + iraePagar);
+
