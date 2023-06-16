@@ -25,4 +25,5 @@ function calcular() {
 
   console.log(totalIvaPagar);
   console.log(totalIraePagar);
+
 }
