@@ -5,62 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Pre Entrega 1 Manuel Sosa</title>
+    <title>Pre Entrega 2 Manuel Sosa</title>
   </head>
   <body>
-    <main>
-        <section>
-            <div class="table__header">
-                <h1>Cáculo IVA e IRAE</h1>
-            </div>
-            <div class="table">
-                <div class="in">
-                    <div class="column__header">
-                        <h2>FACTURACIÓN</h2>
-                    </div>
-                    <div class="table__columns">
-                        <div class="sales">
-                            <!-- <div class="table__row">
-                                <label class="table__item" for="iva-sale">IVA Venta</label>
-                                <input class="table__item" type="number" name="iva-sale" id="iva-sale" />
-                            </div> -->
-                            <div class="table__row">
-                                <label class="table__item" for="sale-total">Facturación TOTAL</label>
-                                <input class="table__item" type="number" name="sale-total" id="sale-total" />
-                            </div>
-                        </div>
-                        <div class="buys">
-                            <!-- <div class="table__row">
-                                <label class="table__item" for="iva-buy">IVA Compra</label>
-                                <input class="table__item" type="number" name="iva-buy" id="iva-buy" />
-                            </div> -->
-                            <div class="table__row">
-                                <label class="table__item" for="buy-total">Compras TOTAL</label>
-                                <input class="table__item" type="number" name="buy-total" id="buy-total" />
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" onclick="calcular()">CALCULAR</button>
-                </div>
-                <div class="out">
-                    <div class="column__header">
-                        <h2>RESULTADO</h2>
-                    </div>
-                    <div class="table__columns">
-                        <div class="iva__payment">
-                            <span>Total IVA a pagar</span>
-                            <p class="iva__resultado" id="ivaResultado"></p>
-                        </div>
-                        <div class="irae_payment">
-                            <span>Total IRAE a pagar</span>
-                            <p class="irae__resultado" id="iraeResultado"></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <script src="js/index.js"></script>
+    <h1>Tercera pre-entrega Manuel Sosa</h1>
+    <div class="form">
+      <div class="select">
+        <button id="brand" value="1">Marca</button>
+        <button id="model" value="2">Modelo</button>
+        <button id="category" value="3">Categoría</button>
+      </div>
+      <div class="interactive">
+        <label for="search">Selecciona el tipo de busqueda</label>
+        <input type="text" placeholder="Buscar" />
+      </div>
+      <div class="actions">
+        <button class="actions__button__clear" id="clear">Borrar</button>
+        <button class="actions__button__search" id="search">Buscar</button>
+      </div>
+    </div>
+    <div class="render">
+      <div class="resultado" id="resultado"></div>
+    </div>
+    <script type="module" src="js/index.js"></script>
   </body>
 </html>
