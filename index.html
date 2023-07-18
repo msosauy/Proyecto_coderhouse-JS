@@ -8,24 +8,22 @@
     <title>Pre Entrega 2 Manuel Sosa</title>
   </head>
   <body>
-    <h1>Tercera pre-entrega Manuel Sosa</h1>
+    <!-- <h1>Tercera pre-entrega Manuel Sosa</h1> -->
     <div class="form">
-      <div class="select">
-        <button id="brand" value="1">Marca</button>
-        <button id="model" value="2">Modelo</button>
-        <button id="category" value="3">Categoría</button>
-      </div>
-      <div class="interactive">
-        <label for="search">Selecciona el tipo de busqueda</label>
-        <input type="text" placeholder="Buscar" />
-      </div>
-      <div class="actions">
-        <button class="actions__button__clear" id="clear">Borrar</button>
-        <button class="actions__button__search" id="search">Buscar</button>
-      </div>
+      <label for="search">Que estas buscando?</label>
+      <input type="search" placeholder="Buscar" id="searchInput" />
     </div>
-    <div class="render">
-      <div class="resultado" id="resultado"></div>
+    <div class="resultado">
+      <table>
+        <thead>
+          <th>Marca</th>
+          <th>Modelo</th>
+          <th>Categoría</th>
+          <th>Precio</th>
+        </thead>
+        <tbody id="dynamicConten"></tbody>
+        <!-- AQUÍ Contenido dinámico -->
+      </table>
     </div>
     <script type="module" src="js/index.js"></script>
   </body>
