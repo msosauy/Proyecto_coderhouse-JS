@@ -3,17 +3,18 @@ import products from "../data.js";
 document.getElementById("searchInput").addEventListener("keyup", () => {
   let searchResultRaw = [];
 
-  searchResultRaw.push( products.filter((el) =>
-    el.brand.includes(searchInput.value)
-  ));
+  searchResultRaw.push(
+    products.filter((el) => el.brand.includes(searchInput.value))
+  );
 
-  searchResultRaw.push( products.filter((el) =>
-    el.model.includes(searchInput.value)
-  ));
+  searchResultRaw.push(
+    products.filter((el) => el.model.includes(searchInput.value))
+  );
 
-  searchResultRaw.push(  products.filter((el) =>
-    el.category.includes(searchInput.value)
-  ));
+  searchResultRaw.push(
+    products.filter((el) => el.category.includes(searchInput.value))
+  );
+
 
   const len = searchResultRaw[0].length;
   let searchResult = [];
@@ -35,18 +36,16 @@ document.getElementById("searchInput").addEventListener("keyup", () => {
 
   for (let i = 0; i < searchResult.length; i++) {
     const el = searchResult[i];
-    const content =
-    `<tr>
+    const content = `<tr>
         <td>${el.brand}</td>
         <td>${el.model}</td>
         <td>${el.category}</td>
         <td>U$S ${el.price}</td>
-    </tr>`
+    </tr>`;
 
-
-    arrayContent.push(content)
+    arrayContent.push(content);
   }
-  renderZone.innerHTML = arrayContent
+  renderZone.innerHTML = arrayContent;
 });
 
 // resultado.push();

@@ -17,6 +17,14 @@ body {
     align-items: center;
 }
 
+label {
+    margin: 10px;
+}
+
+input {
+    margin: 10px;
+}
+
 .resultado th {
     height: 30px;
     width: 150px;
