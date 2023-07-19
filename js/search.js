@@ -1,4 +1,4 @@
-//Defectos a corregir: No diferencia entre mayusculas y minusculas
+//Defectos a corregir: No diferencia entre mayúsculas y minúsculas
 
 import products from "../data.js";
 
