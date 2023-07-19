@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pre Entrega 3 Manuel Sosa</title>
+  </head>
+  <body>
+    <h1>Tercera pre-entrega Manuel Sosa</h1>
+    <div class="form" id="form"></div>
+    <a href="../index.html"><button id="btnLogout">LOGOUT</button></a><br />
+    <div class="resultado">
+      <table>
+        <thead>
+          <th>Marca<input type="search" id="brandSearch" /></th>
+          <th>Modelo<input type="search" id="modelSearch" /></th>
+          <th>Categoría<input type="search" id="categorySearch" /></th>
+          <th>
+            <div>Precio</div>
+            <input
+              placeholder="Mínimo"
+              class="priceFilter"
+              type="number"
+              id="minPrice"
+            />
+            <input
+              placeholder="Máximo"
+              class="priceFilter"
+              type="number"
+              id="maxPrice"
+            />
+          </th>
+        </thead>
+        <tbody id="dynamicConten"></tbody>
+        <!-- AQUÍ Contenido dinámico -->
+      </table>
+    </div>
+    <script type="module" src="../js/search.js"></script>
+  </body>
+</html>

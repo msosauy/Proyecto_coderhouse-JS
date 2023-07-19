@@ -3,7 +3,7 @@ const products = [
       id: 1,
       brand: 'Mikrotik',
       model: 'RB-951UI',
-      category: 'Networkin',
+      category: 'Redes',
       price: 100
     },
     {
@@ -17,7 +17,7 @@ const products = [
       id: 3,
       brand: 'Mikrotik',
       model: 'RB-952-AC',
-      category: 'Networkin',
+      category: 'Redes',
       price: 150
     },
     {
@@ -39,6 +39,13 @@ const products = [
       brand: 'Ubiquiti',
       model: 'LiteBeam-AC',
       category: 'Networkin',
+      price: 300
+    },
+    {
+      id: 7,
+      brand: 'Ubiquiti',
+      model: 'LiteBeam-AC-2gen',
+      category: 'Redes',
       price: 300
     },
   ]

@@ -2,29 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <title>Pre Entrega 2 Manuel Sosa</title>
+    <title>Login</title>
   </head>
   <body>
-    <h1>Tercera pre-entrega Manuel Sosa</h1>
-    <div class="form">
-      <label for="search">Que estas buscando?</label>
-      <input type="search" placeholder="Buscar" id="searchInput" />
+    <div class="login">
+      <h1>Tercera pre-entrega Manuel Sosa</h1>
+      <h1>Bienvenido</h1>
+      <h2>Ingrese sus datos para comenzar</h2>
+      <input type="text" placeholder="Nombre" id="nombre" />
+      <input type="text" placeholder="Apellido" id="apellido" />
+      <a href="pages/searchPage.html"><button id="btnLogin">Login</button></a>
     </div>
-    <div class="resultado">
-      <table>
-        <thead>
-          <th>Marca</th>
-          <th>Modelo</th>
-          <th>Categoría</th>
-          <th>Precio</th>
-        </thead>
-        <tbody id="dynamicConten"></tbody>
-        <!-- AQUÍ Contenido dinámico -->
-      </table>
-    </div>
-    <script type="module" src="js/index.js"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>

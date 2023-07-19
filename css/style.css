@@ -11,18 +11,29 @@ body {
     align-items: center;
 }
 
-.form {
+.login {
     display: flex;
     flex-direction: column;
+    margin: 40px;
+    gap: 10px;
+}
+
+.form {
+    display: flex;
     align-items: center;
+    margin: 30px;
 }
 
 label {
     margin: 10px;
+    font-size: xx-large;
 }
 
-input {
+
+.form input {
     margin: 10px;
+    height: 30px;
+    widows: 200px;
 }
 
 .resultado th {
@@ -38,4 +49,14 @@ input {
     color: white;
     background-color: grey;
     text-align: center;
+}
+
+.resultado input {
+    height: 15px;
+    width: 110px;
+    margin-bottom: 5px;
+}
+
+.resultado .priceFilter {
+    width: 70px;
 }
