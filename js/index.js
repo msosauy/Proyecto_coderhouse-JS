@@ -1,4 +1,4 @@
-import products from "./data.js";
+import products from "../data.js";
 
 //El usuario elije rl tipo de busqueda
 const tarea = parseFloat(prompt("1-Marca | 2-Modelo | 3-Precio"));
