@@ -50,6 +50,8 @@ const products = [
     },
   ]
 
-  ///false
-  
-  export default products;
+export const getProducts = () => {
+  setTimeout(() => {
+    return products
+  }, 1000);
+} 
