@@ -1,7 +1,5 @@
 //Defectos a corregir: No diferencia entre mayúsculas y minúsculas
 
-import products from "../data.js";
-
 //Toma los datos de LOGIN y los muestra en pantalla
 let name = localStorage.getItem(localStorage.key(0 + 1));
 let surname = localStorage.getItem(localStorage.key(0));
