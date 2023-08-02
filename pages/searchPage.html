@@ -8,10 +8,13 @@
     <title>Proyecto Final Manuel Sosa</title>
   </head>
   <body>
-    <h1>Proyecto Final Manuel Sosa</h1>
-    <div class="form" id="form"></div>
-    <a href="../index.html"><button id="btnLogout">LOGOUT</button></a><br />
-    <div class="resultado">
+    <nav>
+      <!-- <h1>Proyecto Final Manuel Sosa</h1> -->
+      <div class="userId" id="userId"></div>
+      <input type="search" id="search" placeholder="Buscar" />
+      <button id="btnLogout">LOGOUT</button>
+    </nav>
+    <main class="resultado">
       <table>
         <thead>
           <th>Marca<input type="search" id="brandSearch" /></th>
@@ -36,7 +39,8 @@
         <tbody id="dynamicConten"></tbody>
         <!-- AQUÍ Contenido dinámico -->
       </table>
-    </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/luxon@3.3.0/build/global/luxon.min.js"></script>
     <script type="module" src="../js/search.js"></script>
   </body>
 </html>

@@ -4,31 +4,71 @@
     box-sizing: border-box;
 }
 
-body {
+nav {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(196, 3, 3);
+    box-shadow: 10px 5px 20px grey;
 }
 
-.login {
+.userId {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+}
+
+nav h1, h3 {
+    color: white;
+}
+
+nav input {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+}
+
+nav button {
+    color: rgb(196, 3, 3);
+    font-size: smaller;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    height: 20px;
+    width: 70px;
+}
+
+main {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin: 40px;
-    gap: 10px;
+    gap: 20px;
 }
 
-.form {
-    display: flex;
-    align-items: center;
-    margin: 30px;
+.login input {
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid grey;
 }
 
-label {
-    margin: 10px;
-    font-size: xx-large;
+.login input::placeholder {
+    color: rgb(196, 3, 3);
+    font-size: 15px;
 }
 
+.login button {
+    color: white;
+    background-color: rgb(196, 3, 3);
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+}
 
 .form input {
     margin: 10px;
@@ -40,7 +80,7 @@ label {
     height: 30px;
     width: 150px;
     color: white;
-    background-color: red;
+    background-color: rgb(196, 3, 3);
 }
 
 .resultado td {
