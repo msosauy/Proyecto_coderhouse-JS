@@ -1,1 +1,6 @@
-Se validan los datos ingresados antes de realizar el login.
+Para cumplir con las objetivos específicos se hizo lo siguiente:
+
+Se utilizaron array y objetos en varias partes del codigo.
+Se cargan los usuarios de forma asincronica desde un JSON a trvés de FETCH.
+Se manipula el DOM para traer datos ingresados por el usuario y para mostrar en pantalla los datos de las busquedas, nombre de usuario, etc.
+Se utilizó la librería LUXON para mostrar la fecha en NAV
